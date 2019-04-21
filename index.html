@@ -1,1 +1,71 @@
-index.html
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+ <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="styl.css">
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+
+</script>
+<body onload="startTime()">
+	<div class="container-fluid">
+<div class="row">
+	<div class="col-xl-9">
+		
+       <div class="row footer">
+	       <div class="col-xl-12">
+		       <span class="color"> Notice :</span> <marquee><p> spinel tach give you a opportunity to work softwarespinel tach give you a opportunity to work software</p> </marquee>
+	
+	       </div>
+       </div>
+	</div>
+	<div class="col-xl-3 border" >
+		<div class="row">
+			<div class="col-xl-12 border">
+			
+			     <div  class="clock">
+	              <p id="txt"></p>
+                  </div>
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-xl-12 border">
+				<img src="photo/auto1.jpeg" width="100%">
+			</div>
+		</div>
+    <br>
+    <div class="row">
+			<div class="col-xl-12 border">
+				<img src="photo/b3.jpeg" width="100%">
+			</div>
+		</div><br>
+<div class="row">
+			<div class="col-md-12 border">
+				<img src="photo/images.jpg" width="100%">
+			</div>
+		</div>
+
+   
+</div>
+
+</body>
+</html>
